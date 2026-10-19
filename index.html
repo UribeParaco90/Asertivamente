@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asertivamente · Comunicación que conecta</title>
+<meta name="description" content="Consejos, técnicas, test y foro para aprender a comunicarte de forma asertiva.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="#inicio" class="logo" aria-label="Asertivamente, inicio">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 6h17a4 4 0 0 1 4 4v7a4 4 0 0 1-4 4h-8l-6 5v-5H8a4 4 0 0 1-4-4V10a4 4 0 0 1 4-4z" fill="#2a8c8a"/><circle cx="12" cy="13.5" r="1.6" fill="#fff"/><circle cx="17" cy="13.5" r="1.6" fill="#fff"/><circle cx="22" cy="13.5" r="1.6" fill="#f2a541"/></svg>
+      Asertiva<span>mente</span>
+    </a>
+    <nav>
+      <button class="burger" id="burger" aria-label="Abrir menú">Menú</button>
+      <ul id="menu">
+        <li><a href="#estilos">Estilos</a></li>
+        <li><a href="#tips">Tips</a></li>
+        <li><a href="#tecnicas">Técnicas</a></li>
+        <li><a href="#test">Test</a></li>
+        <li><a href="#frases">Frases</a></li>
+        <li><a href="#foro">Foro</a></li>
+        <li><a href="#contacto" class="btn btn-dark" style="padding:9px 20px;color:#fff">Suscríbete</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="container grid">
+    <div>
+      <span class="eyebrow" style="color:var(--amber)">Comunicación consciente</span>
+      <h1>Di lo que piensas, <em>respetando</em> lo que sienten.</h1>
+      <p class="lead">Asertivamente es un espacio para aprender a comunicarte con claridad, empatía y seguridad: en casa, en el estudio, en el trabajo y en tus relaciones.</p>
+      <div class="actions">
+        <a href="#test" class="btn btn-primary">Haz el test gratis</a>
+        <a href="#tips" class="btn btn-ghost">Ver los tips</a>
+      </div>
+      <div class="stats">
+        <div><strong>12</strong><span>tips prácticos</span></div>
+        <div><strong>5</strong><span>técnicas probadas</span></div>
+        <div><strong>3</strong><span>estilos de comunicación</span></div>
+      </div>
+    </div>
+    <div class="bubbles" aria-hidden="true">
+      <div class="bubble b1"><small>Pasivo</small>“No importa, como tú quieras…”</div>
+      <div class="bubble b2"><small>Asertivo</small>“Prefiero esta opción, ¿qué piensas tú?”</div>
+      <div class="bubble b3"><small>Agresivo</small>“¡Siempre haces lo mismo!”</div>
+    </div>
+  </div>
+</section>
+
+<!-- ESTILOS -->
+<section id="estilos">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Lo básico</span>
+      <h2>Tres formas de comunicarnos</h2>
+      <p>Casi todos mezclamos estilos según la situación. Reconocerlos es el primer paso para elegir cómo queremos responder.</p>
+    </div>
+    <div class="styles">
+      <article class="style-card pasivo">
+        <span class="tag">Evita el conflicto</span>
+        <h3>Pasivo</h3>
+        <p>Callas lo que piensas o sientes para no incomodar. A largo plazo genera resentimiento y que otros decidan por ti.</p>
+        <blockquote>“Está bien, no te preocupes…” (aunque sí me importa)</blockquote>
+      </article>
+      <article class="style-card asertivo">
+        <span class="tag">El equilibrio</span>
+        <h3>Asertivo</h3>
+        <p>Expresas tus ideas, necesidades y límites con honestidad y respeto, y escuchas al otro con la misma importancia.</p>
+        <blockquote>“Entiendo tu punto. Yo lo veo distinto, ¿lo hablamos?”</blockquote>
+      </article>
+      <article class="style-card agresivo">
+        <span class="tag">Impone</span>
+        <h3>Agresivo</h3>
+        <p>Defiendes tu posición sin considerar al otro: gritas, acusas o descalificas. Consigue resultados rápidos, pero daña vínculos.</p>
+        <blockquote>“Tú nunca escuchas, siempre es lo mismo contigo.”</blockquote>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- TIPS -->
+<section id="tips">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Consejos</span>
+      <h2>Tips para comunicarte mejor</h2>
+      <p>Pequeños hábitos que cambian tus conversaciones. Filtra por categoría.</p>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Filtrar tips">
+      <button class="chip active" data-f="todos">Todos</button>
+      <button class="chip" data-f="escucha">Escucha</button>
+      <button class="chip" data-f="expresion">Expresión</button>
+      <button class="chip" data-f="emociones">Emociones</button>
+      <button class="chip" data-f="digital">Digital</button>
+    </div>
+    <div class="tips-grid" id="tipsGrid"></div>
+  </div>
+</section>
+
+<!-- TECNICAS -->
+<section id="tecnicas">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Herramientas</span>
+      <h2>Técnicas asertivas que puedes practicar hoy</h2>
+      <p>Despliega cada técnica para ver cómo funciona y un ejemplo real.</p>
+    </div>
+    <div class="acc" id="acc"></div>
+  </div>
+</section>
+
+<!-- TEST -->
+<section id="test">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow" style="color:var(--amber)">Autoevaluación</span>
+      <h2>¿Qué tan asertivo eres?</h2>
+      <p>Seis situaciones cotidianas. Responde con lo que realmente harías, no con lo que “deberías” hacer. Es solo orientativo y no se guarda ningún dato.</p>
+    </div>
+    <div class="quiz" id="quiz"></div>
+  </div>
+</section>
+
+<!-- FRASES -->
+<section id="frases">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Del dicho al hecho</span>
+      <h2>Cambia la frase, cambia la conversación</h2>
+      <p>Mismas situaciones, distinta forma de decirlas.</p>
+    </div>
+    <div class="phrases">
+      <div class="phrase"><div class="no"><b>En vez de</b>“Nunca me ayudas con nada.”</div><div class="yes"><b>Prueba con</b>“Me siento sobrecargado; ¿podemos repartir las tareas?”</div></div>
+      <div class="phrase"><div class="no"><b>En vez de</b>“Eso que dices no tiene sentido.”</div><div class="yes"><b>Prueba con</b>“No termino de entenderlo, ¿me lo explicas de otra forma?”</div></div>
+      <div class="phrase"><div class="no"><b>En vez de</b>“Sí, claro, yo me encargo” (sin poder)</div><div class="yes"><b>Prueba con</b>“Ahora no me da el tiempo, pero puedo ayudarte el jueves.”</div></div>
+      <div class="phrase"><div class="no"><b>En vez de</b>“Eres un desorganizado.”</div><div class="yes"><b>Prueba con</b>“Cuando los archivos están desordenados me cuesta trabajar; ¿acordamos una estructura?”</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FORO -->
+<section id="foro">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Comunidad</span>
+      <h2>Foro: comparte tu experiencia</h2>
+      <p>Cuenta una situación, pide consejo o ayuda a otros. Sé respetuoso: aquí practicamos lo que predicamos. <em>(Demo: las publicaciones se guardan solo en tu navegador.)</em></p>
+    </div>
+    <div class="forum">
+      <div class="posts" id="posts" aria-live="polite"></div>
+      <form class="card" id="postForm">
+        <h3>Nueva publicación</h3>
+        <label for="pName">Tu nombre</label>
+        <input id="pName" maxlength="30" required placeholder="Ej: Camila">
+        <label for="pCat">Categoría</label>
+        <select id="pCat">
+          <option>Familia</option><option>Trabajo</option><option>Amistad</option><option>Pareja</option><option>Estudio</option>
+        </select>
+        <label for="pTitle">Título</label>
+        <input id="pTitle" maxlength="80" required placeholder="¿Cómo le digo que no a…?">
+        <label for="pText">Tu mensaje</label>
+        <textarea id="pText" maxlength="500" required></textarea>
+        <button class="btn btn-primary" type="submit" style="width:100%">Publicar</button>
+        <p class="small-note">Sé amable. No compartas datos personales.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section id="contacto" style="padding-top:40px">
+  <div class="container">
+    <div class="cta">
+      <div>
+        <h2>Un tip de comunicación cada semana</h2>
+        <p>Recibe ejercicios cortos y frases listas para usar. Sin spam.</p>
+      </div>
+      <div>
+        <form id="newsForm">
+          <input type="email" id="email" placeholder="tu@correo.com" required aria-label="Correo electrónico">
+          <button class="btn btn-dark" type="submit">Quiero recibirlo</button>
+        </form>
+        <p class="msg" id="newsMsg" role="status"></p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <h4>Asertivamente</h4>
+        <p>Un proyecto para comunicarnos con más claridad, respeto y empatía.</p>
+      </div>
+      <div>
+        <h4>Explora</h4>
+        <ul><li><a href="#estilos">Estilos</a></li><li><a href="#tips">Tips</a></li><li><a href="#tecnicas">Técnicas</a></li><li><a href="#test">Test</a></li></ul>
+      </div>
+      <div>
+        <h4>Comunidad</h4>
+        <ul><li><a href="#foro">Foro</a></li><li><a href="#frases">Frases útiles</a></li><li><a href="#contacto">Boletín</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Asertivamente. Contenido educativo, no sustituye la orientación psicológica profesional.</span>
+      <span class="watermark">Evelio Restrepo</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
