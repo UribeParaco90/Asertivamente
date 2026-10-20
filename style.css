@@ -111,6 +111,19 @@ nav a:hover{color:var(--amber-dark)}
 .phrase .yes{background:var(--teal-100);color:var(--teal-900);padding:14px 20px;font-size:.95rem;font-weight:500}
 .phrase b{display:block;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:2px}
 
+/* REFLEXIONES */
+#reflexiones{background:var(--cream)}
+.challenge-card{background:linear-gradient(135deg,var(--teal-900),var(--teal-700));color:#fff;padding:32px;border-radius:var(--radius);margin-bottom:24px;box-shadow:var(--shadow)}
+.challenge-card .tag{background:rgba(255,255,255,.14);color:var(--amber)}
+.challenge-card h3{color:#fff;font-size:1.35rem;margin:4px 0 12px}
+.challenge-card p{max-width:900px;color:rgba(255,255,255,.88)}
+.member-reflections{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.member-card{background:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);border-top:5px solid var(--amber)}
+.member-card h3{font-size:1.4rem;margin:4px 0 18px}
+.member-card h4{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-700);margin:16px 0 6px}
+.member-card p{color:var(--muted);font-size:.95rem}
+.member-card blockquote{background:var(--teal-100);color:var(--teal-900);padding:16px;border-radius:12px;font-size:.95rem}
+
 /* FORO */
 #foro{background:#fff}
 .forum{display:grid;grid-template-columns:1fr 340px;gap:32px;align-items:start}
@@ -162,6 +175,7 @@ footer a:hover{color:var(--amber)}
 @media(max-width:900px){
   .hero .grid,.forum,.cta,.foot-grid{grid-template-columns:1fr}
   .styles{grid-template-columns:1fr}
+  .member-reflections{grid-template-columns:1fr}
   .style-card.asertivo{transform:none}
   .bubbles{height:300px}
   form.card{position:static}
